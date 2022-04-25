@@ -14,7 +14,7 @@
 def test_output():
     f = open(os.path.dirname(os.path.abspath(__file__)) + '/app.py')
     content = f.read()
-    assert content.find("print(") > 0
+    assert "print(" in content
 ```
 
 ### 1) Testing that the student solution contains a particular regex or string
